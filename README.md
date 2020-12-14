@@ -1,13 +1,13 @@
-#Colored balls distribution
+# Colored balls distribution
 
-##Algorithm description
+## Algorithm description
 1. Order the arrays that contain the colored balls from smallest to larges
 2. Flatten to a 1 dimensional array
 3. Start at index i (default is 0) and check if elements form index i to n(number of colors) have a maximum of 2 colors, if true make a group, if false increment the index by 1 and repeat this step
 4. Remove the element from i to 2 from the flatten array
 5. If array is not empty go to step 3
 
-##Backend REST API made with laravel
+## Backend REST API made with laravel
 Endpoint `/api/balls`
 
 `POST /api/balls` has 2 parameter:
@@ -19,7 +19,8 @@ Endpoint `/api/balls`
 - `id`: the id from a successful POST to `/api/balls`
 
 Response:
-```{
+```json
+{
 	"hasError": false,
 	"colors": {
 		"blue": 6,
